@@ -1,0 +1,124 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #ffffff;
+}
+
+header {
+    padding: 20px;
+    text-align: left;
+    border-bottom: none; 
+}
+
+header img {
+    float: left;
+    margin-right: 40px;
+}
+
+.header-text {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    margin-top: 20px;
+}
+b{ 
+    font-size: 20px;
+    line-height: 3em;
+}
+
+header h1 {
+    color: #4682b4;
+    font-size: 2.5em;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+
+header h2 {
+    color: #000; /* Change color to black */
+    font-size: 1.6em;
+    font-weight: normal;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    line-height: 1em;
+}
+
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    color: #000; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+section p1{
+    padding-left: 20px ;
+}
+h3 a:link{
+    color: maroon; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+h3 a:hover{
+    color: steelblue;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.header-text{
+    font-style: italic;
+    color: #555;
+    margin: 10px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+ul {
+    list-style-type: disc; /* Add dots in front of each resource */
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: steelblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul li a:focus,
+ul li a:hover{
+    color: maroon; 
+}
+
+footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+section p {
+    margin: 10px 0;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+header p {
+    margin: 0;
+    color: #666;
+    font-size: 1em;
+}
