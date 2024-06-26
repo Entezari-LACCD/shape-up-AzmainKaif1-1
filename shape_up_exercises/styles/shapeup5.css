@@ -1,0 +1,66 @@
+/* Format the body of the page */
+body {
+    width: 900px;
+    margin: 0 auto;
+    border: 5px solid steelblue;
+    box-shadow: 0 0 10px black;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    padding: 0; /* Remove default body padding */
+}
+
+/* Add a gradient to the header */
+header {
+    background: linear-gradient(to bottom, white, lightsteelblue);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid steelblue; /* Add a steelblue border below the header */
+}
+
+/* Style for the footer */
+footer {
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 5px solid steelblue; /* Add a steelblue border at the top of the footer */
+}
+
+/* Adjust the margins and padding for the main content */
+main {
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+/* Additional styles to match the document */
+h1 {
+    font-size: 200%;
+}
+
+h2 {
+    font-size: 150%;
+    color: red;
+}
+
+a {
+    color: blue;
+    text-decoration: underline;
+}
