@@ -1,36 +1,43 @@
-body, h1, h2, h3, p, ul{
+body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
 }
+
 body {
+    max-width: 1024px;
+    width: 95%;
+    margin:0 auto;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     line-height: 1.6;
     background: #ffffff;
     width: 1200px;
     margin: 0 auto; 
     border: 5px solid steelblue; 
     box-shadow: 0px 0px 10px black;
+    padding: 1em;
 }
-.outer-border{
+
+.outer-border {
     width: 1220px;
     margin: 0 auto;
     border: 5px solid black; 
     padding: 5px;
     box-shadow: 0 0 10px black;
-    background: #ffffff
+    background: #ffffff;
 }
 
 header {
     padding: 20px;
     text-align: left;
-    border-bottom: none; 
     background: linear-gradient(to bottom, white, lightsteelblue);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
 }
 
 header img {
+    max-width: 140px;
+    min-width: 70px;
+    width: 100%; 
+    height: auto;
     float: left;
     margin-right: 40px;
 }
@@ -40,8 +47,13 @@ header img {
     text-align: left;
     vertical-align: top;
     margin-top: 20px;
+    font-style: italic;
+    color: #555;
+    margin: 10px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
-b{ 
+
+b { 
     font-size: 20px;
     line-height: 3em;
 }
@@ -51,45 +63,48 @@ header h1 {
     font-size: 2.5em;
     font-style: italic;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    margin: 0;
 }
 
 header h2 {
-    color: #000; /* Change color to black */
+    color: #000;
     font-size: 1.6em;
     font-weight: normal;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-    margin: 0;
     line-height: 1em;
 }
-nav{
+
+nav {
     background-color: steelblue;
     overflow: hidden;
 }
-nav ul{
+
+nav ul {
     list-style-type: none; 
-    margin: 0;
-    padding: 0;
 }
-nav ul li{
+
+nav ul li {
     float: left;
     position: relative;
 }
-nav ul li a{
+
+nav ul li a {
     display: block; 
     color: white;
     text-align: center;
     padding: 14px 16px; 
     text-decoration: none;
 }
+
 nav ul li a:hover,
-nav ul li a:focus{
+nav ul li a:focus {
     background-color: lightsteelblue;
 }
-nav ul li a.current{
+
+nav ul li a.current {
     color: black;
 }
-nav ul li .submenu{
+
+nav ul li .submenu {
     display: none;
     position: absolute; 
     top: 100%;
@@ -98,21 +113,24 @@ nav ul li .submenu{
     min-width: 160px;
     z-index: 1;
 }
+
 nav ul li:hover .submenu,
-nav ul li:focus-within .submenu{
+nav ul li:focus-within .submenu {
     display: block;
 }
-nav ul li .submenu ul{
+
+nav ul li .submenu ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
+
 nav ul li .submenu li {
     float: none;
 }
-nav ul li .submenu li a{
+
+nav ul li .submenu li a {
     padding: 10px 16px;
 }
+
 main {
     padding: 20px;
     max-width: 1200px;
@@ -124,35 +142,30 @@ h2 {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-section p1{
-    padding-left: 20px ;
+section p1 {
+    padding-left: 20px;
 }
-h3{
+
+h3 {
     color: maroon; 
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-h3 a:hover{
+h3 a:hover {
     color: steelblue;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 section {
     margin-bottom: 20px;
-    float:left;
+    float: left;
     width: 620px;
     margin: 0 20px;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
-.header-text{
-    font-style: italic;
-    color: #555;
-    margin: 10px 0;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-}
 ul {
-    list-style-type: disc; /* Add dots in front of each resource */
+    list-style-type: disc;
     padding-left: 20px;
 }
 
@@ -167,7 +180,7 @@ ul li a {
 }
 
 ul li a:focus,
-ul li a:hover{
+ul li a:hover {
     color: maroon; 
 }
 
@@ -189,78 +202,108 @@ section p {
 }
 
 header p {
-    margin: 0;
     color: #666;
     font-size: 1em;
 }
-aside{
+
+aside {
     float: left;
     width: 245px;
     margin-right: 20px;
     padding: 10px; 
     background: none;
 }
-section{
-    margin-left: 275px;
-}
-aside h2{
+
+aside h2 {
     color: steelblue;
 }
-aside#addtional-resources{
-    float:left;
-    width: 245px; 
-    margin-right: 20px; 
-    padding: 10px; 
-    background: none; 
-    clear:left;
+
+aside#additional-resources {
+    clear: left;
+    margin-top: 20px;
+    padding: 0;
 }
-aside#additional-resources h2{
-    color:maroon;
-    padding: 0px;
+
+aside#additional-resources h2 {
+    color: maroon;
     margin: 0;
+    padding: 0;
     text-align: left;
 }
-aside#additional-resources{
-    padding: 0;
-    margin-top: 20px;
-}
-aside#additional-resources ul{
+
+aside#additional-resources ul {
     padding-left: 20px;
 }
-aside#additional-resources  ul li a {
-    color:steelblue;
+
+aside#additional-resources ul li a {
+    color: steelblue;
     text-decoration: none;
 }
+
 aside#additional-resources ul li a:focus,
 aside#additional-resources ul li a:hover {
     text-decoration: underline;
-    color: steelblue;
-    text-decoration-color: steelblue;
 }
-aside#prepare-resources{
-    float:right; 
+
+aside#prepare-resources {
+    float: right; 
     width: 245px; 
     padding: 10px; 
     background: none;
     margin-left: 20px; 
     margin-right: -20px;
-}
-#main-content{
-    margin-top: -212px;
-}
-#prepare-resources{
     margin-top: -800px;
-    float: right; 
-    width: 245px;
-    padding: 10px;
-    background: none;
-    margin-left: 20px;
     font-size: 14px;
 }
-#prepare-resources h2{
+
+#prepare-resources h2 {
     color: maroon;
     font-size: 17.8px;
 }
-#prepare-resources strong{
+
+#prepare-resources strong {
     font-size: 18px;
+}
+
+#main-content {
+    margin-top: -212px;
+}
+@media (max-width: 900px) {
+    body{
+        box-shadow: none;
+    }
+    body  h1, h2, h3, p ul{
+        font-size: 90%;
+    }
+}
+@media (max-width: 767px) {
+    nav ul{
+        display: none;
+    }
+    .slicknav_menu{
+        display: block; 
+        background-color: steelblue;
+        padding: 3px;
+    }
+    .slicknav_nav{
+        background-color: steelblue;
+    }
+    .slicknav_nav a{
+        background-color: steelblue;
+        color: white;
+    }
+    .slicknav_nav a:hover{
+        background-color: lightsteelblue;
+    }
+    header h1{
+        font-size: 200%;
+    }
+    main{
+        width: 100%;
+    }
+}
+@media (max-width: 479px) {
+    header h1, header h2, section p{
+        font-size: 0.8em;
+    }
 }
