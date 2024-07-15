@@ -86,5 +86,18 @@
     <footer>
         <p>&copy; 2022 Shape Up!</p>
     </footer>
+    <!-- Add SlickNav JavaScript -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/slicknav.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#menu').slicknav({
+            prependTo: 'nav#menu',
+            allowParentLinks: true,
+            nestedParentLinks: true,
+            label: ''
+        });
+    });
+</script>
 </body>
 </html>
