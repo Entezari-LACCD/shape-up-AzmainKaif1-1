@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="description" content="Shape up, fitness journey making fitness enjoyable by personalized program">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/main_rwd.css">
+    <link rel="stylesheet" href="styles/main_3_column.css">
     <title>Shape Up!</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
@@ -18,24 +18,28 @@
             <b>Find the best fit for you</b> 
         </div>
         <nav id="menu">
-            <a href="#" class="menu-toggle">
-                <div class="hamburger-icon">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                MENU
-            </a>
-            <ul class="submenu">
+            <ul>
                 <li><a href="index.html" class="current">Home</a></li>
-                <li><a href="stress/index.html">Stress Relief</a>
+                <li><a href="#">Strength Training</a>
                     <ul class="submenu">
                         <li><a href="stress/index.html">What is Stress?</a></li>
                         <li><a href="stress/meditation.html">Meditation</a></li>
                         <li><a href="stress/exercise.html">Exercise</a></li>
                     </ul>
                 </li>
-                <li><a href="diet/index.html">Healthy Diets</a>
+                <li><a href="#">Cardio Exercises</a>
+                    <ul class="submenu">
+                        <li><a href="exercise/cardio.html">Cardio Exercises</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Stress Relief</a>
+                    <ul class="submenu">
+                        <li><a href="stress/index.html">What is Stress?</a></li>
+                        <li><a href="stress/meditation.html">Meditation</a></li>
+                        <li><a href="stress/exercise.html">Exercise</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Healthy Diets</a>
                     <ul class="submenu">
                         <li><a href="diet/index.html">Why a Healthy Diet?</a></li>
                         <li><a href="diet/plan.html">Plan Your Meals</a></li>
@@ -43,12 +47,6 @@
                         <li><a href="diet/bmi.html">Calculate Your BMI</a></li>
                     </ul>
                 </li>
-                <li><a href="exercise/index.html">Cardio Exercises</a>
-                    <ul class="submenu">
-                        <li><a href="exercise/cardio.html">Cardio Exercises</a></li>
-                    </ul>
-                </li>
-                <li><a href="exercise/strength.html">Strength Training</a></li>
             </ul>
         </nav>
     </header>
@@ -71,44 +69,22 @@
                 <li><a href="https://www.yogajournal.com/poses/yoga-for-beginners/">Yoga workout</a></li>
             </ul>
         </aside>
-
-        <section>
-            <h2>What we offer</h2>
-            <h3>Build strong muscles</h3>
-            <p>Tired of being tired? Strength training can help you manage or lose weight and increase your metabolism to help you burn more calories. It can also increase bone density and reduce the risk of osteoporosis.</p>
-            <h3>Get your heart rate up</h3>
-            <p>Want to lose weight? Cardiovascular exercise burns calories and improves overall health. It can reduce belly fat, promote brain growth, prevent stress, and help you focus.</p>
-            <h3>Relax</h3>
-            <p>Stressed out? Stress can weaken the immune system and cause high blood pressure, fatigue, depression, anxiety, and even heart disease. Learn ways to manage and reduce stress.</p>
-            <h3>Eat what's right for you</h3>
-            <p>Are you really what you eat? Lose weight, gain weight, or just feel great! Maintaining a healthy diet is probably the most important thing you can do to promote overall health.</p>
-        </section>
-        <aside id="prepare-resources">
-            <h2>How to prepare to Shape Up!</h2>
-            <p><strong>Get a check up</strong></p>
-            <p>If you have any health issues or take any medications, be sure to consult with your healthcare provider before beginning exercise or diet regime.</p>
-            <p><strong>Dress for success</strong></p>
-            <p>Workout clothes should be comfy. While exercising, you should be thinking about what you're doing, not what you're wearing. That includes good shoes, which are essential for running, jogging, or walking, and socks that absorb shock and sweat.</p>
-            <p><strong>Equipment</strong></p>
-            <p>You don't need to buy a lot of fancy equipment to get in shape. But you might want to invest in a yoga mat, a light exercise ball, or some weights, depending on your Shape Up! plan.</p>
-            <p><strong>Resist Temptation</strong></p>
-            <p>It's hard to eat right when everyone else is buying lunch at a fast-food restaurant. Invest in some good food containers and bring your healthy lunch and snacks. Your body and your wallet will thank you.</p>
-        </aside>
+        <div id="offer-section">
+            <section>
+                <h2>What we offer</h2>
+                <h3>Build strong muscles</h3>
+                <p>Tired of being tired? Strength training can help you manage or lose weight and increase your metabolism to help you burn more calories. It can also increase bone density and reduce the risk of osteoporosis.</p>
+                <h3>Get your heart rate up</h3>
+                <p>Want to lose weight? Cardiovascular exercise burns calories and improves overall health. It can reduce belly fat, promote brain growth, prevent stress, and help you focus.</p>
+                <h3>Relax</h3>
+                <p>Stressed out? Stress can weaken the immune system and cause high blood pressure, fatigue, depression, anxiety, and even heart disease. Learn ways to manage and reduce stress.</p>
+                <h3>Eat what's right for you</h3>
+                <p>Are you really what you eat? Lose weight, gain weight, or just feel great! Maintaining a healthy diet is probably the most important thing you can do to promote overall health.</p>
+            </section>
+        </div>
     </main>
     <footer>
         <p>&copy; 2022 Shape Up!</p>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="path/to/slicknav.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('#menu').slicknav();
-            $('.menu-toggle').click(function(e) {
-                e.preventDefault();
-                $(this).next('.submenu').slideToggle();
-            });
-        });
-    </script>
 </body>
 </html>

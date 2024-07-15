@@ -4,23 +4,20 @@ body, h1, h2, h3, p, ul {
 }
 
 body {
-    max-width: 1024px;
-    width: 95%;
-    margin:0 auto;
     font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0;
     line-height: 1.6;
     background: #ffffff;
     width: 1200px;
-    margin: 0 auto; 
-    border: 5px solid steelblue; 
+    border: 5px solid steelblue;
     box-shadow: 0px 0px 10px black;
-    padding: 1em;
 }
 
 .outer-border {
     width: 1220px;
     margin: 0 auto;
-    border: 5px solid black; 
+    border: 5px solid black;
     padding: 5px;
     box-shadow: 0 0 10px black;
     background: #ffffff;
@@ -29,15 +26,12 @@ body {
 header {
     padding: 20px;
     text-align: left;
+    border-bottom: none;
     background: linear-gradient(to bottom, white, lightsteelblue);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 header img {
-    max-width: 140px;
-    min-width: 70px;
-    width: 100%; 
-    height: auto;
     float: left;
     margin-right: 40px;
 }
@@ -47,13 +41,9 @@ header img {
     text-align: left;
     vertical-align: top;
     margin-top: 20px;
-    font-style: italic;
-    color: #555;
-    margin: 10px 0;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-b { 
+b {
     font-size: 20px;
     line-height: 3em;
 }
@@ -63,6 +53,7 @@ header h1 {
     font-size: 2.5em;
     font-style: italic;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin: 0;
 }
 
 header h2 {
@@ -70,28 +61,35 @@ header h2 {
     font-size: 1.6em;
     font-weight: normal;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    margin: 0;
     line-height: 1em;
 }
 
 nav {
     background-color: steelblue;
     overflow: hidden;
+    margin-bottom: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
 }
 
 nav ul {
-    list-style-type: none; 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
     float: left;
     position: relative;
+    margin-right: 105px;
 }
 
 nav ul li a {
-    display: block; 
+    display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px; 
+    padding: 14px 16px;
     text-decoration: none;
 }
 
@@ -106,7 +104,7 @@ nav ul li a.current {
 
 nav ul li .submenu {
     display: none;
-    position: absolute; 
+    position: absolute;
     top: 100%;
     left: 0;
     background-color: steelblue;
@@ -121,6 +119,8 @@ nav ul li:focus-within .submenu {
 
 nav ul li .submenu ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li .submenu li {
@@ -138,7 +138,7 @@ main {
 }
 
 h2 {
-    color: #000; 
+    color: #000;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -147,7 +147,7 @@ section p1 {
 }
 
 h3 {
-    color: maroon; 
+    color: maroon;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -161,7 +161,14 @@ section {
     float: left;
     width: 620px;
     margin: 0 20px;
-    margin-top: 0;
+    margin-top: 0px;
+}
+
+.header-text {
+    font-style: italic;
+    color: #555;
+    margin: 10px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 ul {
@@ -181,7 +188,7 @@ ul li a {
 
 ul li a:focus,
 ul li a:hover {
-    color: maroon; 
+    color: maroon;
 }
 
 footer {
@@ -193,6 +200,7 @@ footer {
     width: 100%;
     bottom: 0;
     clear: both;
+    margin-top: 850px;
 }
 
 section p {
@@ -202,6 +210,7 @@ section p {
 }
 
 header p {
+    margin: 0;
     color: #666;
     font-size: 1em;
 }
@@ -209,26 +218,51 @@ header p {
 aside {
     float: left;
     width: 245px;
-    margin-right: 20px;
-    padding: 10px; 
+    margin-right: 40px;
+    padding: 10px;
     background: none;
+}
+
+section {
+    margin-left: 275px;
 }
 
 aside h2 {
     color: steelblue;
 }
 
-aside#additional-resources {
+#additional-resources {
+    float: left;
+    width: 25%;
+    margin-right: 5%;
+    position: relative;
+    top: -48px;
+}
+
+#offer-section {
+    float: right;
+    width: 96%;
+}
+
+aside#addtional-resources {
+    float: left;
+    width: 245px;
+    margin-right: 20px;
+    padding: 10px;
+    background: none;
     clear: left;
-    margin-top: 20px;
-    padding: 0;
 }
 
 aside#additional-resources h2 {
     color: maroon;
+    padding: 0px;
     margin: 0;
-    padding: 0;
     text-align: left;
+}
+
+aside#additional-resources {
+    padding: 0;
+    margin-top: -200px;
 }
 
 aside#additional-resources ul {
@@ -243,16 +277,32 @@ aside#additional-resources ul li a {
 aside#additional-resources ul li a:focus,
 aside#additional-resources ul li a:hover {
     text-decoration: underline;
+    color: steelblue;
+    text-decoration-color: steelblue;
 }
 
 aside#prepare-resources {
-    float: right; 
-    width: 245px; 
-    padding: 10px; 
+    float: right;
+    width: 245px;
+    padding: 10px;
     background: none;
-    margin-left: 20px; 
+    margin-left: 20px;
     margin-right: -20px;
+}
+
+#main-content {
+    margin-top: 10px;
+    float: right;
+    width: 70%;
+}
+
+#prepare-resources {
     margin-top: -800px;
+    float: right;
+    width: 245px;
+    padding: 10px;
+    background: none;
+    margin-left: 20px;
     font-size: 14px;
 }
 
@@ -263,47 +313,4 @@ aside#prepare-resources {
 
 #prepare-resources strong {
     font-size: 18px;
-}
-
-#main-content {
-    margin-top: -212px;
-}
-@media (max-width: 900px) {
-    body{
-        box-shadow: none;
-    }
-    body  h1, h2, h3, p ul{
-        font-size: 90%;
-    }
-}
-@media (max-width: 767px) {
-    nav ul{
-        display: none;
-    }
-    .slicknav_menu{
-        display: block; 
-        background-color: steelblue;
-        padding: 3px;
-    }
-    .slicknav_nav{
-        background-color: steelblue;
-    }
-    .slicknav_nav a{
-        background-color: steelblue;
-        color: white;
-    }
-    .slicknav_nav a:hover{
-        background-color: lightsteelblue;
-    }
-    header h1{
-        font-size: 200%;
-    }
-    main{
-        width: 100%;
-    }
-}
-@media (max-width: 479px) {
-    header h1, header h2, section p{
-        font-size: 0.8em;
-    }
 }
