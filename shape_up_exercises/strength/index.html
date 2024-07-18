@@ -1,15 +1,81 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Shape Up! | Strength Training</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Shape up, fitness journey making fitness enjoyable by personalized program">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/strength.css">
+    <title>Shape Up!</title>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
 </head>
-
 <body>
-	<main>
-	    <h1>Strength Training</h1>
-		<h2>Under Construction</h2>
-	</main>
+    <header>
+        <a href="../index.html">
+            <img src="../images/shape_up_logo.png" alt="Shape Up Logo">
+        </a>
+        <div class="header-text">
+            <h1>Shape Up!</h1>
+            <b>Find the best fit for you</b> 
+        </div>
+    </header>
+    <nav id="menu">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="index.html" class="current">Strength Training</a></li>
+            <li><a href="../cardio/index.html">Cardio Exercises</a></li>
+            <li><a href="../stress/index.html">Stress Relief</a></li>
+            <li><a href="../diet/index.html">Healthy Diets</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Strength Training</h2>
+            <p>Welcome to strength training section. Here you will find various exercises and tips to help you build muscle and improve strength.</p>
+            <h3>Why Strength Training?</h3>
+            <p>Strength training helps you build lean muscle mass, improve your metabolism, and enhance your overall fitness levels. Whether you're a beginner or an experienced athlete, incorporating strength training into your fitness routine can bring numerous benefits.</p>
+            <h3>Exercises</h3>
+            <ul>
+                <li><strong>Squats:</strong> A fundamental exercise that targets the lower body, including the glutes, quads, and hamstrings.</li>
+                <li><strong>Deadlifts:</strong> A full-body exercise that emphasizes the back, glutes, and hamstrings.</li>
+                <li><strong>Bench Press:</strong> A classic upper body exercise that works the chest, shoulders, and triceps.</li>
+                <li><strong>Pull-Ups:</strong> An upper body exercise that primarily targets the back and biceps.</li>
+                <li><strong>Planks:</strong> A core exercise that strengthens the abs, back, and shoulders.</li>
+            </ul>
+            <h3>Tips for Effective Training</h3>
+            <p>To get the most out of your strength training routine, consider these tips:</p>
+            <ul>
+                <li>Maintain proper form to prevent injuries.</li>
+                <li>Gradually increase the weight and intensity of your workouts.</li>
+                <li>Include a variety of exercises to target different muscle groups.</li>
+                <li>Allow adequate rest and recovery between sessions.</li>
+                <li>Stay hydrated and follow a balanced diet to support your training.</li>
+            </ul>
+        </section>
+        <aside id="additional-resources">
+            <h2>Additional Resources</h2>
+            <ul>
+                <li><a href="https://www.cdc.gov/physicalactivity/basics/index.htm">Physical Activity and Health</a></li>
+                <li><a href="https://www.healthline.com/health/stretching-exercises-for-seniors">Stretching Exercises</a></li>
+                <li><a href="https://www.verywellfit.com/strength-training-4157121">Strength Training</a></li>
+                <li><a href="https://www.verywellfit.com/cardio-exercises-4157087">Cardiovascular Training</a></li>
+                <li><a href="https://www.yogajournal.com/poses/yoga-for-beginners/">Yoga Workout</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2022 Shape Up!</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/slicknav.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#menu').slicknav({
+                prependTo: 'nav#menu',
+                allowParentLinks: true,
+                nestedParentLinks: true,
+                label: ''
+            });
+        });
+    </script>
 </body>
 </html>
