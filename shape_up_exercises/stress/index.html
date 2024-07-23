@@ -1,15 +1,77 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Shape Up! | Stress</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Shape up, fitness journey making fitness enjoyable by personalized program">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/stress.css">
+    <title>Shape Up! | Stress</title>
+    <link rel="icon" href="../shape_up_exercises/images/favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slicknav/dist/jquery.slicknav.min.js"></script>
 </head>
-
 <body>
-    <main>
-        <h1>Stress Relief</h1>
-        <h2>Under Construction</h2>
-	</main>
+    <header>
+        <a href="index.html">
+            <img src="../images/shape_up_logo.png" alt="Shape Up Logo">
+        </a>
+        <div class="header-text">
+            <h1>Shape Up!</h1>
+            <b>Find the best fit for you</b> 
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Strength Training</a></li>
+                <li><a href="#">Cardio Exercises</a></li>
+                <li><a href="index.html" class="current">Stress Relief</a></li>
+                <li><a href="#">Healthy Diets</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Stress Relief Techniques</h2>
+        <p>Stress is a common issue that affects many people. Fortunately, there are various techniques that can help you manage and reduce stress. Here are some effective stress relief methods:</p>
+        
+        <h3>Meditation</h3>
+        <p>Meditation is a powerful tool for reducing stress. It involves focusing your mind on a particular object, thought, or activity to achieve a mentally clear and emotionally calm state. Regular meditation practice can help you control stress, decrease anxiety, improve cardiovascular health, and achieve a greater capacity for relaxation.</p>
+        
+        <h3>Exercise</h3>
+        <p>Exercise is another excellent way to combat stress. Physical activity can help reduce stress hormones and trigger the release of endorphins, which are chemicals in the brain that act as natural painkillers and mood elevators. Activities such as running, walking, swimming, and yoga can be particularly effective.</p>
+        
+        <h3>Healthy Living</h3>
+        <p>Maintaining a healthy lifestyle can greatly reduce your stress levels. This includes eating a balanced diet, getting enough sleep, and managing your time effectively. Avoiding excessive caffeine and sugar can also help, as these can contribute to feelings of anxiety and restlessness.</p>
+        
+        <h3>Breathing Exercises</h3>
+        <p>Deep breathing exercises can help you relax and reduce stress. Try taking slow, deep breaths, holding for a few seconds, and then slowly exhaling. This can help slow your heart rate and reduce feelings of stress.</p>
+        
+        <h3>Social Support</h3>
+        <p>Having a strong support network can help you cope with stress. Spending time with friends and family, or seeking support from a counselor or therapist, can provide emotional comfort and practical advice.</p>
+        
+        <p>By incorporating these techniques into your daily routine, you can better manage stress and improve your overall well-being.</p>
+    </section>
+    <aside>
+        <h2>Additional Resources</h2>
+        <ul>
+            <li><a href="https://www.cdc.gov/physicalactivity/basics/index.htm">Physical activity and health</a></li>
+            <li><a href="https://www.healthline.com/health/stretching-exercises-for-seniors">Stretching exercises</a></li>
+            <li><a href="https://www.verywellfit.com/strength-training-4157121">Strength training</a></li>
+            <li><a href="https://www.verywellfit.com/cardio-exercises-4157087">Cardiovascular training</a></li>
+            <li><a href="https://www.yogajournal.com/poses/yoga-for-beginners/">Yoga workout</a></li>
+        </ul>
+    </aside>
+    <footer>
+        <p>&copy; 2024 Shape Up!</p>
+    </footer>
+    <script>
+        $(document).ready(function(){
+            $('#menu').slicknav({
+                prependTo: 'nav#menu',
+                allowParentLinks: true,
+                nestedParentLinks: true,
+                label: ''
+            });
+        });
+    </script>
 </body>
 </html>
