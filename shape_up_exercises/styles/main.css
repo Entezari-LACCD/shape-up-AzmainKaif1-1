@@ -1,44 +1,46 @@
-.outer-border{
-    width: 920px;
-    margin: 0 auto;
-    border: 5px solid black; 
-    padding: 5px;
-    box-shadow: 0 0 10px black;
-    background: #ffffff
-}
-body {
-    font-family: Arial, sans-serif;
+body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     background: #ffffff;
-    width: 900px;
-    margin: 0 auto; 
-    border: 5px solid steelblue; 
+    max-width: 1024px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
+    border: 5px solid steelblue;
     box-shadow: 0px 0px 10px black;
 }
 
 header {
-    padding: 20px;
+    padding: 1.25em; /* 20px converted to ems */
     text-align: left;
-    border-bottom: none; 
+    border-bottom: none;
     background: linear-gradient(to bottom, white, lightsteelblue);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header img {
-    float: left;
-    margin-right: 40px;
+    max-width: 140px;
+    min-width: 70px;
+    width: 100%;
 }
 
 .header-text {
     display: inline-block;
     text-align: left;
     vertical-align: top;
-    margin-top: 20px;
+    margin-top: 1.25em; /* 20px converted to ems */
 }
-b{ 
-    font-size: 20px;
+
+b {
+    font-size: 1.25em; /* 20px converted to ems */
     line-height: 3em;
 }
 
@@ -51,56 +53,152 @@ header h1 {
 }
 
 header h2 {
-    color: #000; /* Change color to black */
+    color: #000;
     font-size: 1.6em;
     font-weight: normal;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
     margin: 0;
     line-height: 1em;
 }
+article h2 {
+    color: maroon; /* Change the heading color to maroon */
+    font-family: Arial, sans-serif; /* Optional: Specify the font-family */
+    font-size: 1.5em; /* Optional: Adjust the font size */
+    margin-top: 10px; /* Optional: Space above the heading */
+    margin-bottom: 10px; /* Optional: Space below the heading */
+}
+nav {
+    position: relative;
+}
 
+nav .menu-toggle {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav .hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+nav .hamburger-icon div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: steelblue;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: lightsteelblue;
+}
+
+nav ul li a.current {
+    color: black;
+}
+
+nav ul li .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: steelblue;
+    min-width: 160px;
+    z-index: 1;
+}
+
+nav ul li:hover .submenu,
+nav ul li:focus-within .submenu {
+    display: block;
+}
+
+nav ul li .submenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li .submenu li {
+    float: none;
+}
+
+nav ul li .submenu li a {
+    padding: 10px 16px;
+}
 
 main {
-    padding: 20px;
-    max-width: 800px;
+    padding: 1.25em; /* 20px converted to ems */
+    max-width: 1024px;
     margin: auto;
 }
 
 h2 {
-    color: #000; 
+    color: #000;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-section p1{
-    padding-left: 20px ;
-}
-h3 a:link{
-    color: maroon; 
+section p {
+    padding-left: 1.25em; /* 20px converted to ems */
+    color: #333;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-h3 a:hover{
+h3 {
+    color: maroon;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+h3 a:hover {
     color: steelblue;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 section {
-    margin-bottom: 20px;
+    margin-bottom: 1.25em; /* 20px converted to ems */
+    float: left;
+    width: 60%;
+    margin: 0 1.25em; /* 20px converted to ems */
+    margin-top: 0;
 }
 
-.header-text{
+.header-text {
     font-style: italic;
     color: #555;
     margin: 10px 0;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
+
 ul {
-    list-style-type: disc; /* Add dots in front of each resource */
-    padding-left: 20px;
+    list-style-type: disc;
+    padding-left: 1.25em; /* 20px converted to ems */
 }
 
 ul li {
-    margin-bottom: 10px;
+    margin-bottom: 0.625em; /* 10px converted to ems */
 }
 
 ul li a {
@@ -110,8 +208,8 @@ ul li a {
 }
 
 ul li a:focus,
-ul li a:hover{
-    color: maroon; 
+ul li a:hover {
+    color: maroon;
 }
 
 footer {
@@ -122,16 +220,142 @@ footer {
     position: relative;
     width: 100%;
     bottom: 0;
-}
-
-section p {
-    margin: 10px 0;
-    color: #333;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    clear: both;
 }
 
 header p {
     margin: 0;
     color: #666;
     font-size: 1em;
+}
+
+aside {
+    float: left;
+    width: 30%;
+    margin-right: 1.25em; /* 20px converted to ems */
+    padding: 0.625em; /* 10px converted to ems */
+    background: none;
+}
+
+#additional-resources {
+    float: left;
+    width: 30%;
+    margin-right: 1.25em; /* 20px converted to ems */
+    padding: 0.625em; /* 10px converted to ems */
+    background: none;
+    clear: left;
+}
+
+#additional-resources h2 {
+    color: maroon;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+#additional-resources ul {
+    padding-left: 1.25em; /* 20px converted to ems */
+}
+
+#additional-resources ul li a {
+    color: steelblue;
+    text-decoration: none;
+}
+
+#additional-resources ul li a:focus,
+#additional-resources ul li a:hover {
+    text-decoration: underline;
+    color: steelblue;
+    text-decoration-color: steelblue;
+}
+
+#prepare-resources {
+    float: right;
+    width: 30%;
+    padding: 0.625em; /* 10px converted to ems */
+    background: none;
+    margin-left: 1.25em; /* 20px converted to ems */
+    font-size: 14px;
+}
+
+#prepare-resources h2 {
+    color: maroon;
+    font-size: 17.8px;
+}
+
+#prepare-resources strong {
+    font-size: 18px;
+}
+.tip-image {
+    float: right;
+    margin-left: 15px; /* Spacing between image and text */
+    margin-bottom: 10px; /* Spacing below the image */
+    border: 1px solid #ddd; /* Optional: Add a border to the images */
+    padding: 5px; /* Optional: Padding inside the border */
+    max-width: 150px; /* Limit the maximum width of the images */
+}
+
+/* Media query for a maximum screen size of 900px */
+@media screen and (max-width: 900px) {
+    body {
+        font-size: 90%;
+        box-shadow: none;
+    }
+}
+
+#stress-relief-header {
+    font-family: 'Redressed', sans-serif; /* Example of a custom font */
+    font-size: 2em; /* Adjust size as needed */
+    color: #333; /* Dark color for the text */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Space below the heading */
+    font-weight: bold;
+}
+
+/* Media query for a maximum screen size of 767px */
+@media screen and (max-width: 767px) {
+    #menu {
+        display: none;
+    }
+
+    /* SlickNav menu styles */
+    .slicknav_menu {
+        background-color: steelblue;
+        padding: 3px;
+    }
+
+    .slicknav_nav, .slicknav_nav a {
+        background-color: steelblue;
+    }
+
+    .slicknav_nav a:hover {
+        background-color: lightsteelblue;
+    }
+
+    header h1 {
+        font-size: 200%;
+    }
+
+    main {
+        display: block;
+    }
+
+    section, aside {
+        float: none;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 767px) {
+    .tip-image {
+        float: none; /* Cancel the float on smaller screens */
+        margin: 0 auto 10px; /* Center the image with margin below */
+        display: block; /* Ensure the image is treated as a block element */
+    }
+}
+
+/* Media query for a maximum screen size of 479px */
+@media screen and (max-width: 479px) {
+    header h1, section p {
+        font-size: 0.9em;
+    }
 }
