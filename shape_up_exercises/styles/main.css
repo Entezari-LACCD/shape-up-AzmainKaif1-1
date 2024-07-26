@@ -1,3 +1,4 @@
+/* Main Styles */
 body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
@@ -16,7 +17,7 @@ body {
 }
 
 header {
-    padding: 1.25em; /* 20px converted to ems */
+    padding: 1.25em;
     text-align: left;
     border-bottom: none;
     background: linear-gradient(to bottom, white, lightsteelblue);
@@ -36,11 +37,11 @@ header img {
     display: inline-block;
     text-align: left;
     vertical-align: top;
-    margin-top: 1.25em; /* 20px converted to ems */
+    margin-top: 1.25em;
 }
 
 b {
-    font-size: 1.25em; /* 20px converted to ems */
+    font-size: 1.25em;
     line-height: 3em;
 }
 
@@ -60,13 +61,15 @@ header h2 {
     margin: 0;
     line-height: 1em;
 }
+
 article h2 {
-    color: maroon; /* Change the heading color to maroon */
-    font-family: Arial, sans-serif; /* Optional: Specify the font-family */
-    font-size: 1.5em; /* Optional: Adjust the font size */
-    margin-top: 10px; /* Optional: Space above the heading */
-    margin-bottom: 10px; /* Optional: Space below the heading */
+    color: maroon;
+    font-family: Arial, sans-serif;
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
 nav {
     position: relative;
 }
@@ -151,7 +154,7 @@ nav ul li .submenu li a {
 }
 
 main {
-    padding: 1.25em; /* 20px converted to ems */
+    padding: 1.25em;
     max-width: 1024px;
     margin: auto;
 }
@@ -162,7 +165,7 @@ h2 {
 }
 
 section p {
-    padding-left: 1.25em; /* 20px converted to ems */
+    padding-left: 1.25em;
     color: #333;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
@@ -178,10 +181,10 @@ h3 a:hover {
 }
 
 section {
-    margin-bottom: 1.25em; /* 20px converted to ems */
+    margin-bottom: 1.25em;
     float: left;
     width: 60%;
-    margin: 0 1.25em; /* 20px converted to ems */
+    margin: 0 1.25em;
     margin-top: 0;
 }
 
@@ -194,11 +197,11 @@ section {
 
 ul {
     list-style-type: disc;
-    padding-left: 1.25em; /* 20px converted to ems */
+    padding-left: 1.25em;
 }
 
 ul li {
-    margin-bottom: 0.625em; /* 10px converted to ems */
+    margin-bottom: 0.625em;
 }
 
 ul li a {
@@ -232,16 +235,16 @@ header p {
 aside {
     float: left;
     width: 30%;
-    margin-right: 1.25em; /* 20px converted to ems */
-    padding: 0.625em; /* 10px converted to ems */
+    margin-right: 1.25em;
+    padding: 0.625em;
     background: none;
 }
 
 #additional-resources {
     float: left;
     width: 30%;
-    margin-right: 1.25em; /* 20px converted to ems */
-    padding: 0.625em; /* 10px converted to ems */
+    margin-right: 1.25em;
+    padding: 0.625em;
     background: none;
     clear: left;
 }
@@ -254,7 +257,7 @@ aside {
 }
 
 #additional-resources ul {
-    padding-left: 1.25em; /* 20px converted to ems */
+    padding-left: 1.25em;
 }
 
 #additional-resources ul li a {
@@ -272,9 +275,9 @@ aside {
 #prepare-resources {
     float: right;
     width: 30%;
-    padding: 0.625em; /* 10px converted to ems */
+    padding: 0.625em;
     background: none;
-    margin-left: 1.25em; /* 20px converted to ems */
+    margin-left: 1.25em;
     font-size: 14px;
 }
 
@@ -286,16 +289,36 @@ aside {
 #prepare-resources strong {
     font-size: 18px;
 }
+
 .tip-image {
     float: right;
-    margin-left: 15px; /* Spacing between image and text */
-    margin-bottom: 10px; /* Spacing below the image */
-    border: 1px solid #ddd; /* Optional: Add a border to the images */
-    padding: 5px; /* Optional: Padding inside the border */
-    max-width: 150px; /* Limit the maximum width of the images */
+    margin-left: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    max-width: 150px;
 }
 
-/* Media query for a maximum screen size of 900px */
+/* Video Styles */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
 @media screen and (max-width: 900px) {
     body {
         font-size: 90%;
@@ -304,21 +327,19 @@ aside {
 }
 
 #stress-relief-header {
-    font-family: 'Redressed', sans-serif; /* Example of a custom font */
-    font-size: 2em; /* Adjust size as needed */
-    color: #333; /* Dark color for the text */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    margin-bottom: 20px; /* Space below the heading */
+    font-family: 'Redressed', sans-serif;
+    font-size: 2em;
+    color: #333;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
     font-weight: bold;
 }
 
-/* Media query for a maximum screen size of 767px */
 @media screen and (max-width: 767px) {
     #menu {
         display: none;
     }
 
-    /* SlickNav menu styles */
     .slicknav_menu {
         background-color: steelblue;
         padding: 3px;
@@ -345,17 +366,52 @@ aside {
         width: 100%;
     }
 }
+
 @media screen and (max-width: 767px) {
     .tip-image {
-        float: none; /* Cancel the float on smaller screens */
-        margin: 0 auto 10px; /* Center the image with margin below */
-        display: block; /* Ensure the image is treated as a block element */
+        float: none;
+        margin: 0 auto 10px;
+        display: block;
     }
 }
 
-/* Media query for a maximum screen size of 479px */
 @media screen and (max-width: 479px) {
     header h1, section p {
         font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .video-container {
+        width: 100%;
+        padding: 0;
+        padding-bottom: 75%;
+    }
+}
+
+/* Layout for main content */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#why-meditate {
+    flex: 1; /* Take available space */
+    max-width: 45%; /* Set maximum width */
+    margin-right: 5%; /* Space between columns */
+}
+
+#meditation-content {
+    flex: 1; /* Take available space */
+    max-width: 50%; /* Set maximum width */
+    margin-left: auto; /* Align right */
+}
+@media screen and (max-width: 767px) {
+    .content {
+        flex-direction: column;
+    }
+
+    #why-meditate, #meditation-content {
+        width: 100%;
     }
 }

@@ -1,15 +1,114 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Shape Up! | Meditation</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Shape Up! Stress Relief through Meditation">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <title>Shape Up! | Meditation</title>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
 </head>
-
 <body>
-	<main>
-	    <h1>Meditation</h1>
-		<h2>Under Construction</h2>
-	</main>
+    <header>
+        <a href="../index.html">
+            <img src="../images/shape_up_logo.png" alt="Shape Up Logo">
+        </a>
+        <div class="header-text">
+            <h1>Shape Up!</h1>
+            <b>Find the best fit for you</b>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Strength Training</a>
+                    <ul class="submenu">
+                        <li><a href="../stress/index.html">What is Stress?</a></li>
+                        <li><a href="../stress/meditation.html" class="current">Meditation</a></li>
+                        <li><a href="../stress/exercise.html">Exercise</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Cardio Exercises</a>
+                    <ul class="submenu">
+                        <li><a href="../exercise/cardio.html">Cardio Exercises</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Stress Relief</a>
+                    <ul class="submenu">
+                        <li><a href="../stress/index.html">What is Stress?</a></li>
+                        <li><a href="../stress/meditation.html" class="current">Meditation</a></li>
+                        <li><a href="../stress/exercise.html">Exercise</a></li>
+                        <li><a href="../stress/tips.html">Tips</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Healthy Diets</a>
+                    <ul class="submenu">
+                        <li><a href="../diet/index.html">Why a Healthy Diet?</a></li>
+                        <li><a href="../diet/plan.html">Plan Your Meals</a></li>
+                        <li><a href="../diet/calories.html">Count Your Calories</a></li>
+                        <li><a href="../diet/bmi.html">Calculate Your BMI</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <aside id="why-meditate">
+                <h2>Why Meditate?</h2>
+                <ul>
+                    <li><b>Be happy</b>: Meditation causes the pituitary gland in your brain to secrete endorphins that help elevate mood and have a positive effect on the whole body.</li>
+                    <li><b>Reduce stress</b>: Endorphins also reduce stress levels in the brain.</li>
+                    <li><b>Focus</b>: Through meditation you can learn self-discipline so your mind can focus with increased efficiency.</li>
+                    <li><b>Sleep better</b>: Scientific studies have shown that those who meditate enhance their slow wave sleep pattern which can help fight insomnia.</li>
+                    <li><b>Lower blood pressure</b>: Research has also shown that meditation can reduce blood pressure, both in the short term and later in life.</li>
+                    <li><b>Pain relief</b>: The long term practice of meditation can lead to physical changes in the brain that help alter the perception of pain.</li>
+                </ul>
+            </aside>
+            <section id="meditation-content">
+                <h2>What is Meditation?</h2>
+                <p>Meditation is one path toward transforming the mind. Buddhist meditation practices encourage and develop concentration, clarity, and emotional positivity. When you begin a meditation practice, you may learn the patterns and habits of your mind. Meditation offers you a way to cultivate new and more positive ways to approach the things you do throughout your day. Meditation can have a transformative effect and can lead to positive changes as well as a new understanding of life.</p>
+                <h3>Video of a Woman Meditating</h3>
+                <div class="video-container">
+                    <video controls>
+                        <source src="../media/meditation.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <h3>Choose your meditation music</h3>
+                <audio controls loop>
+                    <source src="../media/ambient_grand_piano.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <audio controls loop>
+                    <source src="../media/body_and_soul.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <audio controls loop>
+                    <source src="../media/time_inevitability.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <audio controls loop>
+                    <source src="../media/waves_and_tears.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2022 Shape Up! Icons made by <a href="https://www.flaticon.com/authors/author-name" style="color: black;">Freepik</a> from <a href="https://www.flaticon.com/" style="color: black;">www.flaticon.com</a> licensed by <a href="http://creativecommons.org/licenses/by/3.0/" style="color: black;">CC 3.0 BY</a></p>
+    </footer>
+    <!-- Add SlickNav JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/slicknav.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#menu').slicknav({
+                prependTo: 'nav#menu',
+                allowParentLinks: true,
+                nestedParentLinks: true,
+                label: ''
+            });
+        });
+    </script>
 </body>
 </html>
