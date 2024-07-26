@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +7,28 @@
     <link rel="stylesheet" href="styles/main_rwd.css">
     <title>Shape Up!</title>
     <link rel="icon" href="../shape_up_exercises/images/favicon.ico" type="image/x-icon">
+    <style>
+        /* Define the animation */
+        @keyframes moveAndChangeColor {
+            0% {
+                transform: translateX(0);
+                color: steelblue;
+            }
+            50% {
+                transform: translateX(100%);
+                color: maroon;
+            }
+            100% {
+                transform: translateX(0);
+                color: steelblue;
+            }
+        }
+
+        /* Apply the animation to the h1 element */
+        .animate-text {
+            animation: moveAndChangeColor 8s ease-in-out 1;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -15,7 +36,7 @@
             <img src="../shape_up_exercises/images/shape_up_logo.png" alt="Shape Up Logo">
         </a>
         <div class="header-text">
-            <h1>Shape Up!</h1>
+            <h1 class="animate-text">Shape Up!</h1> <!-- Animation applied here -->
             <b>Find the best fit for you</b>
         </div>
         <nav id="menu">
@@ -54,7 +75,7 @@
     </header>
     <main>
         <section id="main-content">
-            <h2>Get ready to Shape Up!</h2>
+            <h2 class="animated-text">Get ready to Shape Up!</h2>
             <p>How many times have you started a new workout routine or diet? And how many times has it failed to give you the results you want? Now, with the help of this site, you can learn about the exercises and diet that work best for you. We offer personalized programs as well as access to several health and dieting tools. So don't wait! Get started looking and feeling better today.</p>
             <p>As fitness expert Amanda Russell said:<br>
                 <em>Fitness is about so much more than exercise. It's a catalyst for positive change, and it affects every aspect of your life.</em>
@@ -98,7 +119,7 @@
         </div>
     </main>
     <footer>
-        <p>&copy; 2022 Shape Up! Icons made by <a href="https://www.flaticon.com/authors/author-name" style="color: black;">Freepik</a> from <a href="https://www.flaticon.com/" style="color: black;">www.flaticon.com</a> licensed by <a href="http://creativecommons.org/licenses/by/3.0/" style="color: black;">CC 3.0 BY</a></p>
+        <p>&copy; 2022 Shape Up! </p>
     </footer>
     <!-- Add SlickNav JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

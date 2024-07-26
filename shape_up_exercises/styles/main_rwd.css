@@ -1,3 +1,4 @@
+/* Reset and base styles */
 body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
@@ -301,6 +302,12 @@ aside {
     margin-bottom: 10px; /* Space below the icon */
     width: 32px; /* Set icon size */
     height: 32px; /* Set icon size */
+    transition: width 2s ease, transform 2s ease; /* Smooth transition for width and transform */
+}
+
+.offer-icon:hover {
+    width: 64px; /* Increase width on hover */
+    transform: scale(2); /* Double the size on hover */
 }
 
 .offer h3 {
@@ -383,4 +390,25 @@ footer a:hover {
     header h1, section p {
         font-size: 0.9em;
     }
+}
+
+/* Define the animation for the text */
+@keyframes moveAndChangeColor {
+    0% {
+        transform: translateX(0);
+        color: steelblue;
+    }
+    50% {
+        transform: translateX(100%);
+        color: maroon;
+    }
+    100% {
+        transform: translateX(0);
+        color: steelblue;
+    }
+}
+
+/* Apply the animation to the h2 element */
+.animated-text {
+    animation: moveAndChangeColor 8s ease-in-out 1;
 }
